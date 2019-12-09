@@ -1,0 +1,24 @@
+// num = 21
+// argc = 1
+// process_args = value
+// description = Change cpu counter if < 0
+
+#include"../source/cpudef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item = {};
+
+    POP(item);
+
+    if(item < 0)
+    {
+        COUNTER = ARG(0);
+        return 1;
+    }
+// \cmd
+}

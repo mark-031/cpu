@@ -1,0 +1,22 @@
+// num = 14
+// argc = 0
+// description = Pop item and push square root of it
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item = {};
+    POP(item);
+
+    float itemf = item / ACCURACY;
+
+    item = cpuelem_t(sqrt(itemf) * ACCURACY);
+    
+    PUSH(item);
+// \cmd
+}

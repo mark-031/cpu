@@ -1,0 +1,12 @@
+*/old/
+/build_example/
+/__pycache__
+/bin/asm*
+/bin/cpu*
+/source/asm
+/source/asm.exe
+/source/cpu
+/source/cpu.exe
+/source/disasm*
+commands.txt
+*.zip

@@ -1,0 +1,19 @@
+// num = 5
+// argc = 0
+// description = Pop and print element
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item = {};
+
+    POP(item);
+
+    printf("output: %.3f\n", item / ACCURACY);
+// \cmd
+}

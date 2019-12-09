@@ -1,0 +1,23 @@
+// num = 2
+// argc = 1
+// process_args = target
+// description = Pop element
+
+#include"../source/cpudef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item = {};
+    
+    POP(item);
+
+    if(CHECKFLAG(flags_, Mem))
+        MEM(ARG(0)) = item;
+    else if(CHECKFLAG(flags_, Reg))
+        REG(ARG(0)) = item;
+// \cmd
+}

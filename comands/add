@@ -1,0 +1,20 @@
+// num = 11
+// argc = 0
+// description = Pop two elemets and push (elem1 + elem2)
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item1 = {};
+    POP(item1);
+    cpuelem_t item2 = {};
+    POP(item2);
+    
+    PUSH(item1 + item2);
+// \cmd
+}

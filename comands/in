@@ -1,0 +1,27 @@
+// num = 4
+// argc = 0
+// description = Get num by user
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item = {};
+
+    while(true)
+    {
+        printf("input: ");
+
+        if(scanf(CPUELEM_T, &item))
+            break;
+        
+        while(getchar() != '\n');
+    }
+
+    PUSH(cpuelem_t(item * ACCURACY));
+// \cmd
+}

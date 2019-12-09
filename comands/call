@@ -1,0 +1,18 @@
+// num = 18
+// argc = 1
+// process_args = value
+// description = Push current counter to callstack and jump
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    CALLPUSH((cpuelem_t) COUNTER + 3);
+    COUNTER = (size_t) ARG(0);
+    return 1;
+// \cmd
+}

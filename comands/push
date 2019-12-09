@@ -1,0 +1,19 @@
+// num = 1
+// argc = 1
+// process_args = value
+// description = Push element
+
+#include"../source/cpudef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    if(!CHECKFLAG(flags_, Mem) && !CHECKFLAG(flags_, Reg))
+        PUSH(cpuelem_t(ARG(0) * ACCURACY));
+    else
+        PUSH(ARG(0));
+// \cmd
+}

@@ -1,0 +1,67 @@
+in
+pop ax
+
+in
+pop bx
+
+in
+pop cx
+
+push 4
+push ax
+push cx
+mul
+mul
+
+push bx
+push bx
+mul
+
+sub
+
+pop dx
+
+push dx
+
+push dx
+out
+
+jl theend
+
+push 2
+push ax
+mul
+
+push dx
+sqrt
+
+push -1
+push bx
+mul
+
+add
+
+div
+
+out
+
+push 2
+push ax
+mul
+
+push dx
+sqrt
+
+push -1
+push bx
+mul
+
+sub
+
+div
+
+out
+
+theend:
+
+end

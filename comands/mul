@@ -1,0 +1,20 @@
+// num = 10
+// argc = 0
+// description = Multiply two numbers
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item1 = {};
+    POP(item1);
+    cpuelem_t item2 = {};
+    POP(item2);
+    
+    PUSH(cpuelem_t((item1 / ACCURACY) * item2));
+// \cmd
+}

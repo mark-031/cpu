@@ -1,0 +1,19 @@
+// num = 19
+// argc = 0
+// description = Pop item from callstack and jump
+
+#include"../source/cpuprocessdef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    cpuelem_t item = {};
+    CALLPOP(item);
+
+    COUNTER = (size_t) item;
+    return 1;
+// \cmd
+}

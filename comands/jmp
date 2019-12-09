@@ -1,0 +1,17 @@
+// num = 20
+// argc = 1
+// process_args = value
+// description = Change cpu counter
+
+#include"../source/cpudef.hpp"
+
+typedef unsigned long long size_t;
+typedef int cpuelem_t;
+
+int main()
+{
+// cmd
+    COUNTER = ARG(0);
+    return 1;
+// \cmd
+}

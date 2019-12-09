@@ -1,0 +1,12 @@
+jmp start
+
+input:
+    in
+    return
+
+start:
+
+call input
+out
+
+end
